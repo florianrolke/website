@@ -124,7 +124,7 @@
 .animated-box {
   background: white;
   padding: 0.5rem 1.5rem;
-  margin-bottom: 45px;
+  margin-top: 45px;
   border-radius: 0.5rem;
   height: 50px;
   display: flex;
@@ -137,17 +137,17 @@
 }
 
 @keyframes show {
-  0%, 26.66% {
-    transform: translateY(0);
-  }
-  33.33%, 59.99% {
-    transform: translateY(-95px);
-  }
-  66.66%, 93.32% {
+  0% {
     transform: translateY(-190px);
   }
-  100% {
+  33.33% {
+    transform: translateY(-95px);
+  }
+  66.66% {
     transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-190px);
   }
 }
 
@@ -209,21 +209,21 @@
   .animated-box {
     height: 40px;
     padding: 0.25rem 1rem;
-    margin-bottom: 35px;
+    margin-top: 35px;
   }
 
   @keyframes show {
-    0%, 26.66% {
-      transform: translateY(0);
-    }
-    33.33%, 59.99% {
-      transform: translateY(-75px);
-    }
-    66.66%, 93.32% {
+    0% {
       transform: translateY(-150px);
     }
-    100% {
+    33.33% {
+      transform: translateY(-75px);
+    }
+    66.66% {
       transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-150px);
     }
   }
 

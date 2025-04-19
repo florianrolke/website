@@ -2,10 +2,11 @@
 import React from 'react';
 import WaveAnimation from './WaveAnimation';
 import TrustPilotPlaceholder from './TrustPilotPlaceholder';
+import TestimonialSection from './TestimonialSection';
 
 const AnimatedText = () => {
   return (
-    <>
+    <div className="relative">
       <div className="container-animate text-center flex flex-col md:flex-row items-center justify-center gap-8">
         <div>
           <div className="static-text text-white text-3xl md:text-4xl lg:text-5xl mb-4">
@@ -39,12 +40,13 @@ const AnimatedText = () => {
         <img 
           src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
           alt="Profile"
-          className="w-72 h-auto hidden md:block lg:w-96"
+          className="w-80 h-auto hidden md:block lg:w-[28rem]"
         />
       </div>
-      <WaveAnimation />
       <TrustPilotPlaceholder />
-    </>
+      <WaveAnimation />
+      <TestimonialSection />
+    </div>
   );
 };
 
