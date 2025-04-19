@@ -15,9 +15,6 @@ const Index = () => {
         
         <main className="flex flex-col items-center justify-center min-h-[calc(100vh-100px)]">
           <AnimatedText />
-          <p className="text-white text-2xl mt-8 opacity-90">
-            And create an offer that sells.
-          </p>
         </main>
       </div>
     </div>
