@@ -99,3 +99,53 @@
     @apply bg-background text-foreground;
   }
 }
+
+.container-animate {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.animated-text {
+  height: 50px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.animated-text > div > div {
+  display: inline-block;
+  color: white;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.animated-text div:first-child {
+  animation: show 8s linear infinite;
+}
+
+@keyframes show {
+  0% {margin-top: -270px;}
+  5% {margin-top: -180px;}
+  33% {margin-top: -180px;}
+  38% {margin-top: -90px;}
+  66% {margin-top: -90px;}
+  71% {margin-top: 0px;}
+  99.99% {margin-top: 0px;}
+  100% {margin-top: -270px;}
+}
+
+@media (max-width: 640px) {
+  .container-animate {
+    font-size: 1.5rem;
+  }
+  
+  .animated-text {
+    height: 40px;
+  }
+}
