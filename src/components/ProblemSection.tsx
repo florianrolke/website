@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Card, CardContent } from "./ui/card";
+import { ThumbsDown } from 'lucide-react';
 
 const ProblemSection = () => {
   return (
@@ -12,57 +12,34 @@ const ProblemSection = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-8">
-            <div className="flex items-start gap-4">
-              <div className="mt-1 text-green-500 flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-thumbs-up">
-                  <path d="M7 10v12" />
-                  <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                </svg>
+            {[
+              {
+                title: "Endless Fixing of Custom Project Errors:",
+                text: "Spending evenings troubleshooting client-specific AI implementations instead of building your growth pipeline."
+              },
+              {
+                title: "Holiday Emergency Calls:",
+                text: "Your family time interrupted by urgent client requests that "can't wait until Monday.""
+              },
+              {
+                title: "Management Burnout:",
+                text: "Constantly micromanaging VAs instead of focusing on growing your business."
+              },
+              {
+                title: "High Turnover & Inconsistent Results:",
+                text: "The frustration of starting over when VAs leave or fail to deliver consistent acquisition results."
+              }
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-4">
+                <div className="mt-1 text-red-500 flex-shrink-0">
+                  <ThumbsDown className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">{item.title}</h3>
+                  <p className="text-gray-700">{item.text}</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-bold">Endless Fixing of Custom Project Errors:</h3>
-                <p className="text-gray-700">Spending evenings troubleshooting client-specific AI implementations instead of building your growth pipeline.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="mt-1 text-green-500 flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-thumbs-up">
-                  <path d="M7 10v12" />
-                  <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Holiday Emergency Calls:</h3>
-                <p className="text-gray-700">Your family time interrupted by urgent client requests that "can't wait until Monday."</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="mt-1 text-green-500 flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-thumbs-up">
-                  <path d="M7 10v12" />
-                  <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Management Burnout:</h3>
-                <p className="text-gray-700">Constantly micromanaging VAs instead of focusing on growing your business.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="mt-1 text-green-500 flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-thumbs-up">
-                  <path d="M7 10v12" />
-                  <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">High Turnover & Inconsistent Results:</h3>
-                <p className="text-gray-700">The frustration of starting over when VAs leave or fail to deliver consistent acquisition results.</p>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

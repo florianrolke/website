@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "./ui/card";
 
@@ -10,7 +9,7 @@ const HellDreamSection = () => {
           From Custom Projects Chaos to AI Agency Harmony
         </h2>
         
-        <h3 className="text-xl md:text-2xl font-semibold text-center text-green-400 mb-2">
+        <h3 className="text-xl md:text-2xl font-semibold text-center text-[rgba(0,172,193,1)] mb-2">
           The One Business, One Problem, One Avatar Difference
         </h3>
         
@@ -20,225 +19,69 @@ const HellDreamSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* HELL Side */}
-          <div className="flex flex-col">
-            <Card className="p-6 rounded-lg shadow-xl mb-4">
-              <CardContent className="p-0">
-                <div className="flex items-start gap-2 mb-4">
-                  <h3 className="text-2xl font-bold">
-                    <span className="text-orange-500">HELL:</span> The VA Hiring Nightmare
-                  </h3>
-                </div>
-                
-                <div className="mb-4">
-                  <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" 
-                    alt="Stressed person at laptop" 
-                    className="w-full h-40 object-cover rounded-lg"
-                  />
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-red-500 mt-1">
+          <Card className="p-6 rounded-lg shadow-xl mb-4">
+            <CardContent className="p-0">
+              <div className="flex items-start gap-2 mb-4">
+                <h3 className="text-2xl font-bold">
+                  <span className="text-blue-500">HELL:</span> The Custom Project Nightmare
+                </h3>
+              </div>
+              
+              <div className="space-y-4">
+                {[
+                  "Endless Trial & Error – Wasting months (or years) trying to perfect custom solutions, only to face new challenges with each client.",
+                  "Unreliable & Hard to Scale – Custom projects requiring unique attention each time, preventing systematic growth and predictable outcomes.",
+                  "Lack of Ability to Outsource – Specialized knowledge makes delegation nearly impossible, keeping you trapped in implementation.",
+                  "Client Expectation Clashes – Due to unclear expectations within custom projects, leading to scope creep and dissatisfaction.",
+                  "Security Risks – Unexpected vulnerabilities you haven't anticipated when building one-off solutions.",
+                  "Turnover and Retention Issues – Retaining clients after wrapping up a custom project is harder because you need custom retainer solutions.",
+                  "No Backup Plan – When a big client leaves, you go back to square one with no predictable pipeline to replace them."
+                ].map((text, index) => (
+                  <div key={index} className="flex gap-3">
+                    <div className="flex-shrink-0 text-blue-500 mt-1">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
                         <path d="M18 6 6 18" />
                         <path d="m6 6 12 12" />
                       </svg>
                     </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Endless Trial & Error</span> – 
-                      Wasting Months (Or Years) Trying To Find The Right VA, Only To Be Burned Again.
-                    </p>
+                    <p className="text-gray-700">{text}</p>
                   </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-red-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Unreliable & Unresponsive</span> – 
-                      VAs Disappearing Mid-Project, Ghosting After Onboarding, Or Missing Deadlines.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-red-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">The Training Time Sink</span> – 
-                      Spending Weeks Getting A VA Up To Speed, Only For Them To Leave Or Underperform.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-red-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Quality Control Nightmares</span> – 
-                      Constant Supervision Required, Errors That Damage Client Relationships.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-red-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Feast or Famine Cash Flow</span> – 
-                      Inconsistent Client Results Leading To Unpredictable Revenue.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-red-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Constant Price Sensitivity</span> – 
-                      Clients Questioning Value, VAs Demanding More Pay.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-red-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">No Backup Plan</span> – 
-                      Being Held Hostage By VA Availability, With No Systems For Continuity.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
           
           {/* DREAM Side */}
-          <div className="flex flex-col">
-            <Card className="p-6 rounded-lg shadow-xl mb-4">
-              <CardContent className="p-0">
-                <div className="flex items-start gap-2 mb-4">
-                  <h3 className="text-2xl font-bold">
-                    <span className="text-green-500">DREAM:</span> The VA Hub PRO Experience
-                  </h3>
-                </div>
-                
-                <div className="mb-4">
-                  <img 
-                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80" 
-                    alt="Successful team working together" 
-                    className="w-full h-40 object-cover rounded-lg"
-                  />
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-green-500 mt-1">
+          <Card className="p-6 rounded-lg shadow-xl mb-4">
+            <CardContent className="p-0">
+              <div className="flex items-start gap-2 mb-4">
+                <h3 className="text-2xl font-bold">
+                  <span className="text-[rgba(0,172,193,1)]">DREAM:</span> The AI Agency Harmony
+                </h3>
+              </div>
+              
+              <div className="space-y-4">
+                {[
+                  "Pre-Defined Scalable Solutions – We've perfected a repeatable process that delivers consistent results for the same type of client every time.",
+                  "Reliable & Predictable Revenue – Our specialized approach creates stable, recurring income streams you can count on month after month.",
+                  "Easy Team Training – New team members can quickly learn your focused system, eliminating dependency on your personal involvement.",
+                  "Clear Client Expectations – Our specialized offer sets precise boundaries and deliverables from day one, eliminating scope creep.",
+                  "Proven Security Framework – Tested and refined protection systems that eliminate unexpected vulnerabilities.",
+                  "Long-Term Client Partnerships – Built-in continuity that naturally extends beyond project completion into ongoing service relationships.",
+                  "Recession-Proof Stability – A specialized focus that creates a steady pipeline of ideal clients even when markets fluctuate."
+                ].map((text, index) => (
+                  <div key={index} className="flex gap-3">
+                    <div className="flex-shrink-0 text-[rgba(0,172,193,1)] mt-1">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check">
                         <path d="M20 6 9 17l-5-5" />
                       </svg>
                     </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Pre-Vetted GHL Specialists</span> – 
-                      We Hand Pick Highly Skilled VAs Who Are Already Trained In HighLevel And Agency Operations.
-                    </p>
+                    <p className="text-gray-700">{text}</p>
                   </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-green-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check">
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Reliable & Accountable</span> – 
-                      Our VAs Are Committed, Proactive, And Treat Your Business Like Their Own.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-green-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check">
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Plug & Play Implementation</span> – 
-                      Skip Months Of Training, And Start Getting Results The First Week.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-green-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check">
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Quality Assurance Built-In</span> – 
-                      Our Team Leaders Provide Oversight And Support To Ensure Excellence.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-green-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check">
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Predictable ROI</span> – 
-                      Set Monthly Fee, Clear Client Deliverables, Consistent Results.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-green-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check">
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Value-Based Pricing</span> – 
-                      Clients Happily Pay For Outcomes, Not Hours Worked.
-                    </p>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-green-500 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check">
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">Recession-Proof Stability</span> – 
-                      Our Continuity System Means No Single Point Of Failure.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

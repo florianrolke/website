@@ -8,6 +8,7 @@ import TrustPilotPlaceholder from '../components/TrustPilotPlaceholder';
 import TestimonialSection from '../components/TestimonialSection';
 import ProblemSection from '../components/ProblemSection';
 import HellDreamSection from '../components/HellDreamSection';
+import WhyOneBusinessSection from '../components/WhyOneBusinessSection';
 
 const Index = () => {
   return (
@@ -21,15 +22,17 @@ const Index = () => {
           
           <main className="flex flex-col items-center justify-center min-h-[calc(100vh-100px)]">
             <AnimatedText />
+            <TrustPilotPlaceholder />
           </main>
         </div>
       </div>
       
-      <TrustPilotPlaceholder />
       <WaveAnimation />
-      <TestimonialSection />
       <ProblemSection />
+      <TrustPilotPlaceholder />
+      <TestimonialSection />
       <HellDreamSection />
+      <WhyOneBusinessSection />
     </div>
   );
 };
