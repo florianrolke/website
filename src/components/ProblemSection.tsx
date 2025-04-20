@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from "./ui/card";
 import { ThumbsDown } from 'lucide-react';
@@ -14,19 +15,19 @@ const ProblemSection = () => {
           <div className="space-y-8">
             {[
               {
-                title: "Endless Fixing of Custom Project Errors:",
+                title: "Endless Fixing of Custom Project Errors",
                 text: "Spending evenings troubleshooting client-specific AI implementations instead of building your growth pipeline."
               },
               {
-                title: "Holiday Emergency Calls:",
-                text: "Your family time interrupted by urgent client requests that "can't wait until Monday.""
+                title: "Holiday Emergency Calls",
+                text: "Your family time interrupted by urgent client requests that \"can't wait until Monday.\""
               },
               {
-                title: "Management Burnout:",
+                title: "Management Burnout",
                 text: "Constantly micromanaging VAs instead of focusing on growing your business."
               },
               {
-                title: "High Turnover & Inconsistent Results:",
+                title: "High Turnover & Inconsistent Results",
                 text: "The frustration of starting over when VAs leave or fail to deliver consistent acquisition results."
               }
             ].map((item, index) => (
