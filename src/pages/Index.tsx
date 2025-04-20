@@ -22,16 +22,14 @@ const Index = () => {
           
           <main className="flex flex-col items-center justify-center min-h-[calc(100vh-100px)]">
             <AnimatedText />
-            <TrustPilotPlaceholder />
           </main>
         </div>
       </div>
       
       <WaveAnimation />
       <ProblemSection />
+      <TestimonialSection />
       <TrustPilotPlaceholder />
-      <TestimonialSection />
-      <TestimonialSection />
       <HellDreamSection />
       <WhyOneBusinessSection />
     </div>
