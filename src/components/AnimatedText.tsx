@@ -36,6 +36,9 @@ const AnimatedText = () => {
           <p className="text-white text-3xl md:text-4xl lg:text-5xl mt-8 opacity-90 font-normal">
             And create an offer that sells.
           </p>
+          <div className="mt-8">
+            <TrustPilotPlaceholder />
+          </div>
         </div>
         <img 
           src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
@@ -43,7 +46,6 @@ const AnimatedText = () => {
           className="w-80 h-auto hidden md:block lg:w-[28rem]"
         />
       </div>
-      <TrustPilotPlaceholder />
       <WaveAnimation />
       <TestimonialSection />
     </div>

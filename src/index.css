@@ -124,12 +124,11 @@
 .animated-box {
   background: white;
   padding: 0.5rem 1.5rem;
-  margin-top: 45px;
-  border-radius: 0.5rem;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .flip > div {
@@ -137,17 +136,17 @@
 }
 
 @keyframes show {
-  0% {
-    transform: translateY(-190px);
-  }
-  33.33% {
-    transform: translateY(-95px);
-  }
-  66.66% {
+  0%, 30% {
     transform: translateY(0);
   }
-  100% {
-    transform: translateY(-190px);
+  33%, 63% {
+    transform: translateY(-50px);
+  }
+  66%, 96% {
+    transform: translateY(-100px);
+  }
+  99.9%, 100% {
+    transform: translateY(0);
   }
 }
 
@@ -209,21 +208,20 @@
   .animated-box {
     height: 40px;
     padding: 0.25rem 1rem;
-    margin-top: 35px;
   }
 
   @keyframes show {
-    0% {
-      transform: translateY(-150px);
-    }
-    33.33% {
-      transform: translateY(-75px);
-    }
-    66.66% {
+    0%, 30% {
       transform: translateY(0);
     }
-    100% {
-      transform: translateY(-150px);
+    33%, 63% {
+      transform: translateY(-40px);
+    }
+    66%, 96% {
+      transform: translateY(-80px);
+    }
+    99.9%, 100% {
+      transform: translateY(0);
     }
   }
 
