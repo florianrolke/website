@@ -19,7 +19,7 @@ const AnimatedText = () => {
           <span>Connect with me on LinkedIn</span>
         </a>
       )}
-      <div className="container-animate text-center flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 pt-2 md:pt-4">
+      <div className="container-animate text-center flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 pt-1 md:pt-2">
         <div className="w-full md:w-1/2 lg:w-3/5">
           <div className="static-text text-white text-2xl md:text-3xl lg:text-4xl mb-4">
             I help B2B AI agency owners focus on
@@ -53,7 +53,7 @@ const AnimatedText = () => {
           <img 
             src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
             alt="Profile"
-            className="w-72 md:w-[21rem] lg:w-[28rem] h-auto object-contain -mb-20"
+            className="w-72 md:w-[21rem] lg:w-[28rem] h-auto object-contain -mb-20 md:translate-x-4"
           />
         )}
         {isMobile && (
@@ -61,7 +61,7 @@ const AnimatedText = () => {
             <img 
               src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
               alt="Profile"
-              className="w-56 h-auto object-contain -mb-16"
+              className="w-56 h-auto object-contain -mb-16 z-0"
             />
           </div>
         )}
