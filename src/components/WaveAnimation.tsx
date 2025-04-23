@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const WaveAnimation = () => {
   return (
-    <div className="wave-container w-full overflow-hidden relative -mt-16 md:-mt-24">
+    <div className="wave-container w-full overflow-hidden relative -mt-24 md:-mt-32">
       <div className="w-full">
         <svg className="waves w-full" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
