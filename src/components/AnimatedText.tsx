@@ -1,15 +1,14 @@
-
 import React from 'react';
-import WaveAnimation from './WaveAnimation';
-import TrustPilotPlaceholder from './TrustPilotPlaceholder';
-import TestimonialSection from './TestimonialSection';
+import { useIsMobile } from '../hooks/use-mobile';
 
 const AnimatedText = () => {
+  const isMobile = useIsMobile();
+  
   return (
-    <div className="relative">
-      <div className="container-animate text-center flex flex-col md:flex-row items-center justify-center gap-8">
-        <div>
-          <div className="static-text text-white text-3xl md:text-4xl lg:text-5xl mb-4">
+    <div className="relative max-w-[1400px] mx-auto">
+      <div className="container-animate text-center flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 pt-8 md:pt-16">
+        <div className="w-full md:w-1/2 lg:w-3/5">
+          <div className="static-text text-white text-2xl md:text-3xl lg:text-4xl mb-4">
             I help B2B AI agency owners focus on
           </div>
           <div className="animated-text">
@@ -33,21 +32,18 @@ const AnimatedText = () => {
               </div>
             </div>
           </div>
-          <p className="text-white text-3xl md:text-4xl lg:text-5xl mt-8 opacity-90 font-normal">
+          <p className="text-white text-2xl md:text-3xl lg:text-4xl mt-6 md:mt-8 opacity-90 font-normal">
             And create an offer that sells.
           </p>
-          <div className="mt-8">
-            <TrustPilotPlaceholder />
-          </div>
         </div>
-        <img 
-          src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
-          alt="Profile"
-          className="w-80 h-auto hidden md:block lg:w-[28rem]"
-        />
+        {(!isMobile || window.innerWidth >= 768) && (
+          <img 
+            src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
+            alt="Profile"
+            className="w-64 md:w-80 lg:w-[28rem] h-auto object-contain"
+          />
+        )}
       </div>
-      <WaveAnimation />
-      <TestimonialSection />
     </div>
   );
 };

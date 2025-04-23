@@ -1,5 +1,5 @@
-
 import React, { useState, useRef } from 'react';
+import { useIsMobile } from '../hooks/use-mobile';
 
 const testimonials = [
   {
@@ -31,34 +31,54 @@ const testimonials = [
 
 const TestimonialSection = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const isMobile = useIsMobile();
 
   const scrollLeft = () => {
     if (scrollRef.current) {
-      const newPosition = Math.max(scrollPosition - 300, 0);
-      scrollRef.current.scrollTo({
-        left: newPosition,
-        behavior: 'smooth'
-      });
-      setScrollPosition(newPosition);
+      if (isMobile) {
+        const newSlide = Math.max(currentSlide - 1, 0);
+        setCurrentSlide(newSlide);
+        const slideWidth = scrollRef.current.clientWidth;
+        scrollRef.current.scrollTo({
+          left: newSlide * slideWidth,
+          behavior: 'smooth'
+        });
+      } else {
+        const newPosition = Math.max(scrollRef.current.scrollLeft - 300, 0);
+        scrollRef.current.scrollTo({
+          left: newPosition,
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
   const scrollRight = () => {
     if (scrollRef.current) {
-      const maxScroll = scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
-      const newPosition = Math.min(scrollPosition + 300, maxScroll);
-      scrollRef.current.scrollTo({
-        left: newPosition,
-        behavior: 'smooth'
-      });
-      setScrollPosition(newPosition);
+      if (isMobile) {
+        const maxSlide = testimonials.length - 1;
+        const newSlide = Math.min(currentSlide + 1, maxSlide);
+        setCurrentSlide(newSlide);
+        const slideWidth = scrollRef.current.clientWidth;
+        scrollRef.current.scrollTo({
+          left: newSlide * slideWidth,
+          behavior: 'smooth'
+        });
+      } else {
+        const maxScroll = scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
+        const newPosition = Math.min(scrollRef.current.scrollLeft + 300, maxScroll);
+        scrollRef.current.scrollTo({
+          left: newPosition,
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
   return (
-    <section className="bg-white py-16 relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-[rgba(84,58,183,0.05)] to-[rgba(0,172,193,0.05)] h-1/2 top-0"></div>
+    <section className="bg-white py-16 relative w-full overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-[rgba(84,58,183,0.05)] to-[rgba(0,172,193,0.05)] h-1/2 top-0 w-full"></div>
       <div className="container mx-auto px-4 relative">
         <div className="flex items-center justify-center mb-8">
           <h2 className="text-2xl font-bold text-center text-gray-800">Client Testimonials</h2>
@@ -67,22 +87,24 @@ const TestimonialSection = () => {
         <div className="relative">
           <div 
             ref={scrollRef}
-            className="flex overflow-x-auto scrollbar-hide space-x-6 pb-4 scroll-smooth"
+            className="flex overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory touch-pan-x"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index}
-                className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/3 bg-white rounded-lg shadow-lg overflow-hidden"
+                className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/3 snap-center px-2"
               >
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h5 className="text-lg font-semibold mb-2">{testimonial.title}</h5>
-                  <p className="text-gray-600">{testimonial.text}</p>
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h5 className="text-lg font-semibold mb-2">{testimonial.title}</h5>
+                    <p className="text-gray-600">{testimonial.text}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -91,7 +113,7 @@ const TestimonialSection = () => {
           <button 
             onClick={scrollLeft}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg z-10 hover:bg-gray-100 -ml-4 hidden md:block"
-            aria-label="Scroll left"
+            aria-label="Previous testimonial"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -101,7 +123,7 @@ const TestimonialSection = () => {
           <button 
             onClick={scrollRight}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg z-10 hover:bg-gray-100 -mr-4 hidden md:block"
-            aria-label="Scroll right"
+            aria-label="Next testimonial"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -113,6 +135,7 @@ const TestimonialSection = () => {
           <button 
             onClick={scrollLeft}
             className="p-2 bg-white rounded-full shadow-sm"
+            disabled={currentSlide === 0}
             aria-label="Previous testimonial"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -122,6 +145,7 @@ const TestimonialSection = () => {
           <button 
             onClick={scrollRight}
             className="p-2 bg-white rounded-full shadow-sm"
+            disabled={currentSlide === testimonials.length - 1}
             aria-label="Next testimonial"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
