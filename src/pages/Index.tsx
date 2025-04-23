@@ -20,16 +20,17 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center py-2">
             <Logo />
-            <LinkedInButton className="-translate-x-4" />
+            <LinkedInButton className="-translate-x-6" />
           </nav>
           
-          <main className="flex flex-col items-center justify-center min-h-[calc(100vh-100px)]">
+          {!isMobile && (
+            <div className="w-full max-w-lg mx-auto mt-4 mb-6">
+              <TrustPilotPlaceholder />
+            </div>
+          )}
+          
+          <main className="flex flex-col items-center justify-center min-h-[calc(100vh-220px)]">
             <AnimatedText />
-            {!isMobile && (
-              <div className="w-full max-w-lg mx-auto -mt-16 z-10 relative">
-                <TrustPilotPlaceholder />
-              </div>
-            )}
           </main>
         </div>
       </div>
@@ -40,11 +41,14 @@ const Index = () => {
           <TrustPilotPlaceholder />
         </div>
       )}
+      
       <TestimonialSection />
-      <ProblemSection />
-      <div className="bg-white py-8">
+      <div className="bg-white py-4">
+        <ProblemSection />
+      </div>
+      <div className="bg-white py-4">
         <TestimonialSection />
-        <div className="container mx-auto px-4 mt-6">
+        <div className="container mx-auto px-4 mt-4">
           <TrustPilotPlaceholder />
         </div>
       </div>
