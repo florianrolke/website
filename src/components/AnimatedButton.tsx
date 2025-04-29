@@ -14,7 +14,7 @@ const AnimatedButton = ({ href, className = '' }: AnimatedButtonProps) => {
       rel="noopener noreferrer"
       className={`block mx-auto w-fit ${className}`}
     >
-      <button className="custom-btn btn-12">
+      <button className="custom-btn btn-12 minimalist">
         <span>See Calendar Availability &gt;&gt;</span>
         <span>Book a Consultation Call &gt;&gt;</span>
       </button>
