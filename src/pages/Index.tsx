@@ -9,7 +9,10 @@ import TestimonialSection from '../components/TestimonialSection';
 import ProblemSection from '../components/ProblemSection';
 import HellDreamSection from '../components/HellDreamSection';
 import WhyOneBusinessSection from '../components/WhyOneBusinessSection';
+import AnimatedButton from '../components/AnimatedButton';
 import { useIsMobile } from '../hooks/use-mobile';
+
+const CALENDAR_URL = "https://cal.com/florianrolke/nail-your-positioning-clarity-call";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -42,18 +45,41 @@ const Index = () => {
         </div>
       )}
       
+      <div className="bg-white py-8">
+        <AnimatedButton href={CALENDAR_URL} className="mb-8" />
+      </div>
+      
       <TestimonialSection />
+      <div className="bg-white py-8">
+        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      </div>
+      
       <div className="bg-white py-4">
         <ProblemSection />
       </div>
+      <div className="bg-white py-8">
+        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      </div>
+      
       <div className="bg-white py-4">
         <TestimonialSection />
         <div className="container mx-auto px-4 mt-4">
           <TrustPilotPlaceholder />
         </div>
       </div>
+      <div className="bg-white py-8">
+        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      </div>
+      
       <HellDreamSection />
+      <div className="bg-white py-8">
+        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      </div>
+      
       <WhyOneBusinessSection />
+      <div className="bg-white py-8">
+        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      </div>
     </div>
   );
 };
