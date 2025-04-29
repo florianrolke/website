@@ -23,11 +23,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center py-2">
             <Logo />
-            <LinkedInButton className="-translate-x-6" />
+            <LinkedInButton className="-translate-x-2" />
           </nav>
           
           {!isMobile && (
-            <div className="w-full max-w-lg mx-auto mt-4 mb-6">
+            <div className="w-full max-w-lg mx-auto mt-2 mb-4">
               <TrustPilotPlaceholder />
             </div>
           )}
@@ -40,45 +40,45 @@ const Index = () => {
       
       <WaveAnimation />
       {isMobile && (
-        <div className="bg-white pt-6 pb-3">
+        <div className="bg-white pt-4 pb-2">
           <TrustPilotPlaceholder />
         </div>
       )}
       
-      <div className="bg-white py-8">
-        <AnimatedButton href={CALENDAR_URL} className="mb-8" />
+      <div className="bg-white pt-2 pb-4">
+        <AnimatedButton href={CALENDAR_URL} className="mb-4" />
       </div>
       
       <TestimonialSection />
-      <div className="bg-white py-8">
-        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      <div className="bg-white pt-2 pb-4">
+        <AnimatedButton href={CALENDAR_URL} className="my-4" />
       </div>
       
       <div className="bg-white py-4">
         <ProblemSection />
       </div>
-      <div className="bg-white py-8">
-        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      <div className="bg-white pt-2 pb-4">
+        <AnimatedButton href={CALENDAR_URL} className="my-4" />
       </div>
       
       <div className="bg-white py-4">
         <TestimonialSection />
-        <div className="container mx-auto px-4 mt-4">
+        <div className="container mx-auto px-4 mt-2">
           <TrustPilotPlaceholder />
         </div>
       </div>
-      <div className="bg-white py-8">
-        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      <div className="bg-white pt-2 pb-4">
+        <AnimatedButton href={CALENDAR_URL} className="my-4" />
       </div>
       
       <HellDreamSection />
-      <div className="bg-white py-8">
-        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      <div className="bg-white pt-2 pb-4">
+        <AnimatedButton href={CALENDAR_URL} className="my-4" />
       </div>
       
       <WhyOneBusinessSection />
-      <div className="bg-white py-8">
-        <AnimatedButton href={CALENDAR_URL} className="my-8" />
+      <div className="bg-white pt-2 pb-4">
+        <AnimatedButton href={CALENDAR_URL} className="my-4" />
       </div>
     </div>
   );

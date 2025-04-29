@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -256,7 +257,7 @@
   position: relative;
   border: none;
   box-shadow: none;
-  width: 250px;
+  width: 280px;
   height: 50px;
   line-height: 50px;
   -webkit-perspective: 230px;
@@ -265,11 +266,11 @@
 }
 
 .btn-12 span {
-  background: rgb(84,58,183);
-  background: linear-gradient(0deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  background: rgb(63,94,251);
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(87,154,237,1) 50%, rgba(70,209,252,1) 100%);
   display: block;
   position: absolute;
-  width: 250px;
+  width: 280px;
   height: 50px;
   box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
