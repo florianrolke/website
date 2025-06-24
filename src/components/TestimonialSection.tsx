@@ -24,11 +24,11 @@ const TestimonialSection = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-br from-[rgba(84,58,183,1)] to-[rgba(0,172,193,1)] py-16 relative w-full overflow-hidden">
+    <section className="bg-white py-16 relative w-full overflow-hidden">
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Client Experiences</h2>
-          <p className="text-xl text-white/90">My clients</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Client Experiences</h2>
+          <p className="text-xl text-gray-600">My clients</p>
         </div>
         
         <div className="max-w-6xl mx-auto">
