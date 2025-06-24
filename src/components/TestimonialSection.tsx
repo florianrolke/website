@@ -24,18 +24,18 @@ const TestimonialSection = () => {
   }, []);
 
   return (
-    <section className="bg-white py-16 relative w-full overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-[rgba(84,58,183,0.05)] to-[rgba(0,172,193,0.05)] h-1/2 top-0 w-full"></div>
+    <section className="bg-gradient-to-br from-[rgba(84,58,183,1)] to-[rgba(0,172,193,1)] py-16 relative w-full overflow-hidden">
       <div className="container mx-auto px-4 relative">
-        <div className="flex items-center justify-center mb-8">
-          <h2 className="text-2xl font-bold text-center text-gray-800">Client Testimonials</h2>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Client Experiences</h2>
+          <p className="text-xl text-white/90">My clients</p>
         </div>
         
         <div className="max-w-6xl mx-auto">
           <iframe 
             id="wall-of-love-W18EoJH" 
             src="https://senja.io/p/florianrolke/W18EoJH?hideNavigation=true&embed=true" 
-            title="Wall of Love" 
+            title="Client Experiences" 
             frameBorder="0" 
             scrolling="no" 
             width="100%"
