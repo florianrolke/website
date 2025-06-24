@@ -4,7 +4,6 @@ import Logo from '../components/Logo';
 import LinkedInButton from '../components/LinkedInButton';
 import AnimatedText from '../components/AnimatedText';
 import WaveAnimation from '../components/WaveAnimation';
-import TrustPilotPlaceholder from '../components/TrustPilotPlaceholder';
 import TestimonialSection from '../components/TestimonialSection';
 import ProblemSection from '../components/ProblemSection';
 import HellDreamSection from '../components/HellDreamSection';
@@ -26,12 +25,6 @@ const Index = () => {
             <LinkedInButton className="-translate-x-2" />
           </nav>
           
-          {!isMobile && (
-            <div className="w-full max-w-lg mx-auto mt-2 mb-4">
-              <TrustPilotPlaceholder />
-            </div>
-          )}
-          
           <main className="flex flex-col items-center justify-center min-h-[calc(100vh-220px)]">
             <AnimatedText />
           </main>
@@ -39,11 +32,6 @@ const Index = () => {
       </div>
       
       <WaveAnimation />
-      {isMobile && (
-        <div className="bg-white pt-4 pb-2">
-          <TrustPilotPlaceholder />
-        </div>
-      )}
       
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton href={CALENDAR_URL} className="mb-4" />
@@ -63,9 +51,6 @@ const Index = () => {
       
       <div className="bg-white py-4">
         <TestimonialSection />
-        <div className="container mx-auto px-4 mt-2">
-          <TrustPilotPlaceholder />
-        </div>
       </div>
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton href={CALENDAR_URL} className="my-4" />

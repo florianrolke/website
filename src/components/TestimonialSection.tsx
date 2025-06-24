@@ -1,80 +1,27 @@
-import React, { useState, useRef } from 'react';
-import { useIsMobile } from '../hooks/use-mobile';
 
-const testimonials = [
-  {
-    image: "https://image.freepik.com/free-photo/spaghetti-with-carbonara-sauce_1216-324.jpg",
-    text: "There was a time when Chinese food in this country meant (Americanized) Cantonese food.",
-    title: "Chicken for two Roasted"
-  },
-  {
-    image: "https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg",
-    text: "There was a time when Chinese food in this country meant (Americanized) Cantonese food.",
-    title: "Chicken for two Roasted"
-  },
-  {
-    image: "https://image.freepik.com/free-photo/top-view-of-tasty-noodles-with-prawns_1203-1769.jpg",
-    text: "There was a time when Chinese food in this country meant (Americanized) Cantonese food.",
-    title: "Chicken for two Roasted"
-  },
-  {
-    image: "https://image.freepik.com/free-photo/burguer-with-garnish_1088-72.jpg",
-    text: "There was a time when Chinese food in this country meant (Americanized) Cantonese food.",
-    title: "Chicken for two Roasted"
-  },
-  {
-    image: "https://image.freepik.com/free-photo/delicious-pastry-with-chicken_1203-1616.jpg",
-    text: "There was a time when Chinese food in this country meant (Americanized) Cantonese food.",
-    title: "Chicken for two Roasted"
-  }
-];
+import React, { useEffect } from 'react';
 
 const TestimonialSection = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const isMobile = useIsMobile();
-
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      if (isMobile) {
-        const newSlide = Math.max(currentSlide - 1, 0);
-        setCurrentSlide(newSlide);
-        const slideWidth = scrollRef.current.clientWidth;
-        scrollRef.current.scrollTo({
-          left: newSlide * slideWidth,
-          behavior: 'smooth'
-        });
-      } else {
-        const newPosition = Math.max(scrollRef.current.scrollLeft - 300, 0);
-        scrollRef.current.scrollTo({
-          left: newPosition,
-          behavior: 'smooth'
-        });
+  useEffect(() => {
+    // Load the iframeResizer script
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://widget.senja.io/js/iframeResizer.min.js';
+    script.onload = () => {
+      // Initialize iframe resizer after script loads
+      if (window.iFrameResize) {
+        window.iFrameResize({log: false, checkOrigin: false}, "#wall-of-love-W18EoJH");
       }
-    }
-  };
+    };
+    document.head.appendChild(script);
 
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      if (isMobile) {
-        const maxSlide = testimonials.length - 1;
-        const newSlide = Math.min(currentSlide + 1, maxSlide);
-        setCurrentSlide(newSlide);
-        const slideWidth = scrollRef.current.clientWidth;
-        scrollRef.current.scrollTo({
-          left: newSlide * slideWidth,
-          behavior: 'smooth'
-        });
-      } else {
-        const maxScroll = scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
-        const newPosition = Math.min(scrollRef.current.scrollLeft + 300, maxScroll);
-        scrollRef.current.scrollTo({
-          left: newPosition,
-          behavior: 'smooth'
-        });
+    return () => {
+      // Cleanup script on unmount
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
       }
-    }
-  };
+    };
+  }, []);
 
   return (
     <section className="bg-white py-16 relative w-full overflow-hidden">
@@ -84,74 +31,16 @@ const TestimonialSection = () => {
           <h2 className="text-2xl font-bold text-center text-gray-800">Client Testimonials</h2>
         </div>
         
-        <div className="relative">
-          <div 
-            ref={scrollRef}
-            className="flex overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory touch-pan-x"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/3 snap-center px-2"
-              >
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h5 className="text-lg font-semibold mb-2">{testimonial.title}</h5>
-                    <p className="text-gray-600">{testimonial.text}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <button 
-            onClick={scrollLeft}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg z-10 hover:bg-gray-100 -ml-4 hidden md:block"
-            aria-label="Previous testimonial"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          
-          <button 
-            onClick={scrollRight}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg z-10 hover:bg-gray-100 -mr-4 hidden md:block"
-            aria-label="Next testimonial"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-        
-        <div className="flex justify-center mt-6 space-x-2 md:hidden">
-          <button 
-            onClick={scrollLeft}
-            className="p-2 bg-white rounded-full shadow-sm"
-            disabled={currentSlide === 0}
-            aria-label="Previous testimonial"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button 
-            onClick={scrollRight}
-            className="p-2 bg-white rounded-full shadow-sm"
-            disabled={currentSlide === testimonials.length - 1}
-            aria-label="Next testimonial"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+        <div className="max-w-6xl mx-auto">
+          <iframe 
+            id="wall-of-love-W18EoJH" 
+            src="https://senja.io/p/florianrolke/W18EoJH?hideNavigation=true&embed=true" 
+            title="Wall of Love" 
+            frameBorder="0" 
+            scrolling="no" 
+            width="100%"
+            className="rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>
