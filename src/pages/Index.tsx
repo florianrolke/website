@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Logo from '../components/Logo';
 import LinkedInButton from '../components/LinkedInButton';
@@ -37,7 +36,7 @@ const Index = () => {
         <AnimatedButton href={CALENDAR_URL} className="mb-4" />
       </div>
       
-      <TestimonialSection />
+      <TestimonialSection variant="senja" />
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton href={CALENDAR_URL} className="my-4" />
       </div>
@@ -50,7 +49,7 @@ const Index = () => {
       </div>
       
       <div className="bg-white py-4">
-        <TestimonialSection />
+        <TestimonialSection variant="wall-of-love" />
       </div>
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton href={CALENDAR_URL} className="my-4" />
