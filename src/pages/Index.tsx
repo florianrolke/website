@@ -105,6 +105,22 @@ const Index = () => {
           className="w-full h-auto object-cover"
         />
       </div>
+      
+      <div className="w-full">
+        <img 
+          src="/lovable-uploads/2fbfe17e-705c-44cc-a83f-1118fb52cadd.png" 
+          alt="Customer testimonials and feedback collection" 
+          className="w-full h-auto object-cover"
+        />
+      </div>
+      
+      <div className="w-full">
+        <img 
+          src="/lovable-uploads/c78f268e-7680-441a-8666-03c790c25452.png" 
+          alt="Customer testimonials and feedback collection" 
+          className="w-full h-auto object-cover"
+        />
+      </div>
     </div>
   );
 };
