@@ -64,6 +64,15 @@ const Index = () => {
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton href={CALENDAR_URL} className="my-4" />
       </div>
+      
+      {/* Full-screen testimonial image at bottom */}
+      <div className="w-full">
+        <img 
+          src="/lovable-uploads/ea446d69-797c-4681-8a14-e292323faf7e.png" 
+          alt="Customer testimonials and feedback collection" 
+          className="w-full h-auto object-cover"
+        />
+      </div>
     </div>
   );
 };
