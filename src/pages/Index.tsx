@@ -65,12 +65,37 @@ const Index = () => {
         <AnimatedButton href={CALENDAR_URL} className="my-4" />
       </div>
       
-      {/* Full-screen testimonial image at bottom */}
+      {/* Full-screen testimonial images at bottom */}
       <div className="w-full">
         <img 
           src="/lovable-uploads/ea446d69-797c-4681-8a14-e292323faf7e.png" 
           alt="Customer testimonials and feedback collection" 
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover block"
+        />
+        <img 
+          src="/lovable-uploads/caae948d-bc6e-43be-a30c-0fc18438f91f.png" 
+          alt="Customer testimonials and feedback collection" 
+          className="w-full h-auto object-cover block"
+        />
+        <img 
+          src="/lovable-uploads/26565be2-6525-45f8-81aa-94b05249f92b.png" 
+          alt="Customer testimonials and feedback collection" 
+          className="w-full h-auto object-cover block"
+        />
+        <img 
+          src="/lovable-uploads/03946aa2-14b8-4000-b2cf-575e14bf7933.png" 
+          alt="Customer testimonials and feedback collection" 
+          className="w-full h-auto object-cover block"
+        />
+        <img 
+          src="/lovable-uploads/0a57612a-fac1-46d6-b632-4422b2d5ac59.png" 
+          alt="Customer testimonials and feedback collection" 
+          className="w-full h-auto object-cover block"
+        />
+        <img 
+          src="/lovable-uploads/37a97505-15e1-4b92-b65c-b88d483e2d02.png" 
+          alt="Customer testimonials and feedback collection" 
+          className="w-full h-auto object-cover block"
         />
       </div>
     </div>
