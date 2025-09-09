@@ -53,7 +53,7 @@ const AnimatedText = () => {
           <img 
             src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
             alt="Profile"
-            className="w-72 md:w-[21rem] lg:w-[28rem] h-auto object-contain -mt-8 md:translate-x-6 z-0"
+            className="w-72 md:w-[21rem] lg:w-[28rem] h-auto object-contain -mt-10 md:translate-x-6 z-0"
           />
         )}
         {isMobile && (
@@ -61,7 +61,7 @@ const AnimatedText = () => {
             <img 
               src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
               alt="Profile"
-              className="w-56 h-auto object-contain -mt-4 z-0"
+              className="w-56 h-auto object-contain -mt-6 z-0"
             />
           </div>
         )}
