@@ -132,7 +132,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/488787ba-707d-4a60-9a2f-d5ca27d6da5d.png" 
+          src="/lovable-uploads/c960f978-2e14-4879-9efd-cf9d73ba4230.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
