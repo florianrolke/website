@@ -2,13 +2,13 @@ import React from 'react';
 
 const LinkedInRecommendations = () => {
   return (
-    <div className="w-full py-16 bg-muted/30">
+    <div className="w-full py-8 bg-muted/30">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
+        <h2 className="text-4xl font-bold text-center mb-8 text-foreground">
           LinkedIn Recommendations
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
           {/* Recommendation 1 - Dhruv Jain */}
           <div className="bg-primary text-primary-foreground p-6 rounded-lg shadow-lg col-span-1 md:col-span-2 lg:col-span-2 relative overflow-hidden animate-fade-in">
             <div className="absolute top-4 right-4 opacity-20">
