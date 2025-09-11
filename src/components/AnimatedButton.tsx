@@ -9,14 +9,14 @@ interface AnimatedButtonProps {
 const AnimatedButton = ({ href, className = '' }: AnimatedButtonProps) => {
   return (
     <a 
-      href="https://www.skool.com/self-optimization-nation-1012"
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className={`block mx-auto w-fit ${className}`}
     >
       <button className="custom-btn btn-12 minimalist">
-        <span>It's free!</span>
-        <span>Join my free school community</span>
+        <span>See Calendar Availability &gt;&gt;</span>
+        <span>Book a Consultation Call &gt;&gt;</span>
       </button>
     </a>
   );
