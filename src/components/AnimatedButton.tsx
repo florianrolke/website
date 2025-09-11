@@ -2,21 +2,20 @@
 import React from 'react';
 
 interface AnimatedButtonProps {
-  href: string;
   className?: string;
 }
 
-const AnimatedButton = ({ href, className = '' }: AnimatedButtonProps) => {
+const AnimatedButton = ({ className = '' }: AnimatedButtonProps) => {
   return (
     <a 
-      href={href}
+      href="https://www.skool.com/self-optimization-nation-1012"
       target="_blank"
       rel="noopener noreferrer"
       className={`block mx-auto w-fit ${className}`}
     >
       <button className="custom-btn btn-12 minimalist">
-        <span>See Calendar Availability &gt;&gt;</span>
-        <span>Book a Consultation Call &gt;&gt;</span>
+        <span>You get 1:1 attention.</span>
+        <span>Join my free community!</span>
       </button>
     </a>
   );

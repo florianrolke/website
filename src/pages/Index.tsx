@@ -34,38 +34,38 @@ const Index = () => {
       <WaveAnimation />
       
       <div className="bg-white pt-2 pb-4">
-        <AnimatedButton href={CALENDAR_URL} className="mb-4" />
+        <AnimatedButton className="mb-4" />
       </div>
       
       <LinkedInRecommendations />
       
       <TestimonialSection variant="senja" />
       <div className="bg-white pt-2 pb-4">
-        <AnimatedButton href={CALENDAR_URL} className="my-4" />
+        <AnimatedButton className="my-4" />
       </div>
       
       <div className="bg-white py-4">
         <ProblemSection />
       </div>
       <div className="bg-white pt-2 pb-4">
-        <AnimatedButton href={CALENDAR_URL} className="my-4" />
+        <AnimatedButton className="my-4" />
       </div>
       
       <div className="bg-white py-4">
         <TestimonialSection variant="wall-of-love" />
       </div>
       <div className="bg-white pt-2 pb-4">
-        <AnimatedButton href={CALENDAR_URL} className="my-4" />
+        <AnimatedButton className="my-4" />
       </div>
       
       <HellDreamSection />
       <div className="bg-white pt-2 pb-4">
-        <AnimatedButton href={CALENDAR_URL} className="my-4" />
+        <AnimatedButton className="my-4" />
       </div>
       
       <WhyOneBusinessSection />
       <div className="bg-white pt-2 pb-4">
-        <AnimatedButton href={CALENDAR_URL} className="my-4" />
+        <AnimatedButton className="my-4" />
       </div>
       
       {/* Full-screen testimonial images at bottom */}
