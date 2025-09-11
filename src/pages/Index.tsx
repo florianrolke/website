@@ -8,6 +8,7 @@ import ProblemSection from '../components/ProblemSection';
 import HellDreamSection from '../components/HellDreamSection';
 import WhyOneBusinessSection from '../components/WhyOneBusinessSection';
 import AnimatedButton from '../components/AnimatedButton';
+import LinkedInRecommendations from '../components/LinkedInRecommendations';
 import { useIsMobile } from '../hooks/use-mobile';
 
 const CALENDAR_URL = "https://cal.com/florianrolke/nail-your-positioning-clarity-call";
@@ -35,6 +36,8 @@ const Index = () => {
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton href={CALENDAR_URL} className="mb-4" />
       </div>
+      
+      <LinkedInRecommendations />
       
       <TestimonialSection variant="senja" />
       <div className="bg-white pt-2 pb-4">
