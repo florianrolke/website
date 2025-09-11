@@ -10,15 +10,16 @@ const LinkedInRecommendations = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
           {/* Recommendation 1 - Dhruv Jain */}
-          <div className="bg-primary text-primary-foreground p-6 rounded-lg shadow-lg col-span-1 md:col-span-2 lg:col-span-2 relative overflow-hidden animate-fade-in">
+          <div className="bg-primary text-primary-foreground p-6 rounded-lg shadow-lg col-span-1 md:col-span-2 lg:col-span-2 relative overflow-hidden animate-fade-in border-l-4 border-blue-400">
             <div className="absolute top-4 right-4 opacity-20">
               <svg width="80" height="60" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M24 4H40C40 4 40 4 40 4H56C57.1 4 58 4.9 58 6V18C58 19.1 57.1 20 56 20H24C22.9 20 22 19.1 22 18V6C22 4.9 22.9 4 24 4ZM10 12C10 10.9 10.9 10 12 10H18V8C18 6.9 18.9 6 20 6H60C61.1 6 62 6.9 62 8V22C62 23.1 61.1 24 60 24H20C18.9 24 18 23.1 18 22V20H12C10.9 20 10 19.1 10 18V12Z" fill="currentColor"/>
               </svg>
             </div>
+            <div className="absolute top-2 left-2 w-3 h-3 bg-blue-400 rounded-full opacity-60"></div>
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-primary-foreground/20 flex items-center justify-center mr-4">
-                <span className="text-primary-foreground font-semibold text-lg">DJ</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden mr-4 ring-2 ring-blue-400/30">
+                <img src="/lovable-uploads/f3e663f6-7526-40da-89fa-a051e1eb2635.png" alt="Dhruv Jain" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-primary-foreground">Dhruv Jain</p>
@@ -29,15 +30,15 @@ const LinkedInRecommendations = () => {
               Florian is an exceptional business mentor and strategic advisor.
             </h4>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              "I've had the opportunity to work with Florian on business development and strategy, and his guidance has been transformational. He has a rare ability to cut through complexity and turn big-picture thinking into clear, actionable steps that actually move the needle. What impressed me most is his extensive professional network and his skill at connecting the right people at the right time. Florian doesn't just give theoretical advice—he provides concrete resources, valuable introductions, and proven frameworks that create real opportunities."
+              "I've had the opportunity to work with Florian on business development and strategy, and his guidance has been transformational. He has a rare ability to cut through complexity and turn big-picture thinking into clear, actionable steps that actually move the needle. What impressed me most is his extensive professional network and his skill at connecting the right people at the right time. Florian doesn't just give theoretical advice—he provides concrete resources, valuable introductions, and proven frameworks that create real opportunities. His approach is refreshingly direct and results-focused, challenging your thinking while ensuring you stay on track with immediate clarity on next steps."
             </p>
           </div>
 
           {/* Recommendation 2 - Jean-Philippe Duchesneau */}
           <div className="bg-secondary text-secondary-foreground p-6 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.1s'}}>
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-secondary-foreground/20 flex items-center justify-center mr-4">
-                <span className="text-secondary-foreground font-semibold text-lg">JP</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img src="/lovable-uploads/7d050b90-5c8d-446e-b2ca-e341e179d351.png" alt="Jean-Philippe Duchesneau" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-secondary-foreground">Jean-Philippe Duchesneau</p>
@@ -53,10 +54,10 @@ const LinkedInRecommendations = () => {
           </div>
 
           {/* Recommendation 3 - Nate Roten */}
-          <div className="bg-card text-card-foreground p-6 rounded-lg shadow-lg border row-span-2 animate-fade-in" style={{animationDelay: '0.2s'}}>
+          <div className="bg-card text-card-foreground p-6 rounded-lg shadow-lg border animate-fade-in" style={{animationDelay: '0.2s'}}>
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mr-4">
-                <span className="text-card-foreground font-semibold text-lg">NR</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img src="/lovable-uploads/adbff735-bdf7-4211-9071-f1d5c0bc90b6.png" alt="Nate Roten" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-card-foreground">Nate Roten</p>
@@ -74,8 +75,8 @@ const LinkedInRecommendations = () => {
           {/* Recommendation 4 - Milana Thornton */}
           <div className="bg-card text-card-foreground p-6 rounded-lg shadow-lg border animate-fade-in" style={{animationDelay: '0.3s'}}>
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mr-4">
-                <span className="text-card-foreground font-semibold text-lg">MT</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img src="/lovable-uploads/1dd00bdf-86f8-486e-af63-8adb5ac53804.png" alt="Milana Thornton" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-card-foreground">Milana Thornton</p>
@@ -93,8 +94,8 @@ const LinkedInRecommendations = () => {
           {/* Recommendation 5 - Chase Aldridge */}
           <div className="bg-accent text-accent-foreground p-6 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.4s'}}>
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-accent-foreground/20 flex items-center justify-center mr-4">
-                <span className="text-accent-foreground font-semibold text-lg">CA</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img src="/lovable-uploads/b87160d7-d130-4e3b-b93d-2fadc9501abe.png" alt="Chase Aldridge" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-accent-foreground">Chase Aldridge</p>
@@ -112,8 +113,8 @@ const LinkedInRecommendations = () => {
           {/* Recommendation 6 - James Killick */}
           <div className="bg-muted text-muted-foreground p-6 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.5s'}}>
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-muted-foreground/20 flex items-center justify-center mr-4">
-                <span className="text-muted-foreground font-semibold text-lg">JK</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img src="/lovable-uploads/ac70ee7b-619d-4204-b426-91b6436e3a89.png" alt="James Killick" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-muted-foreground">James Killick</p>
