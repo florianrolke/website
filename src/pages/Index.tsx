@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../components/Logo';
-import LinkedInButton from '../components/LinkedInButton';
+import SkoolButton from '../components/SkoolButton';
 import AnimatedText from '../components/AnimatedText';
 import WaveAnimation from '../components/WaveAnimation';
 import TestimonialSection from '../components/TestimonialSection';
@@ -22,7 +22,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center py-2">
             <Logo />
-            <LinkedInButton className="-translate-x-2" />
+            <SkoolButton className="-translate-x-2" />
           </nav>
           
           <main className="flex flex-col items-center justify-center min-h-[calc(100vh-220px)]">
