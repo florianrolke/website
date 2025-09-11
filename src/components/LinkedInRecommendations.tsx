@@ -35,17 +35,17 @@ const LinkedInRecommendations = () => {
           </div>
 
           {/* Recommendation 2 - Jean-Philippe Duchesneau */}
-          <div className="bg-secondary text-secondary-foreground p-6 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.1s'}}>
-            <div className="flex items-center mb-4">
+          <div className="bg-secondary text-secondary-foreground p-4 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.1s'}}>
+            <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img src="/lovable-uploads/7d050b90-5c8d-446e-b2ca-e341e179d351.png" alt="Jean-Philippe Duchesneau" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/b87160d7-d130-4e3b-b93d-2fadc9501abe.png" alt="Jean-Philippe Duchesneau" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-secondary-foreground">Jean-Philippe Duchesneau</p>
                 <p className="text-secondary-foreground/70 text-sm">Tourism Entrepreneur | AI Enthusiast</p>
               </div>
             </div>
-            <h4 className="text-lg font-semibold mb-3 text-secondary-foreground">
+            <h4 className="text-lg font-semibold mb-2 text-secondary-foreground">
               Like getting a fast-track pass to clearer thinking, smarter systems and sharper strategy.
             </h4>
             <p className="text-secondary-foreground/80 text-sm leading-relaxed">
@@ -54,8 +54,8 @@ const LinkedInRecommendations = () => {
           </div>
 
           {/* Recommendation 3 - Nate Roten */}
-          <div className="bg-card text-card-foreground p-6 rounded-lg shadow-lg border animate-fade-in" style={{animationDelay: '0.2s'}}>
-            <div className="flex items-center mb-4">
+          <div className="bg-card text-card-foreground p-4 rounded-lg shadow-lg border animate-fade-in" style={{animationDelay: '0.2s'}}>
+            <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                 <img src="/lovable-uploads/adbff735-bdf7-4211-9071-f1d5c0bc90b6.png" alt="Nate Roten" className="w-full h-full object-cover" />
               </div>
@@ -64,7 +64,7 @@ const LinkedInRecommendations = () => {
                 <p className="text-muted-foreground text-sm">Senior Pastor & Creator</p>
               </div>
             </div>
-            <h4 className="text-lg font-semibold mb-3 text-card-foreground">
+            <h4 className="text-lg font-semibold mb-2 text-card-foreground">
               Florian has been absolutely incredible to work with.
             </h4>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -73,8 +73,8 @@ const LinkedInRecommendations = () => {
           </div>
 
           {/* Recommendation 4 - Milana Thornton */}
-          <div className="bg-card text-card-foreground p-6 rounded-lg shadow-lg border animate-fade-in" style={{animationDelay: '0.3s'}}>
-            <div className="flex items-center mb-4">
+          <div className="bg-card text-card-foreground p-4 rounded-lg shadow-lg border animate-fade-in" style={{animationDelay: '0.3s'}}>
+            <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                 <img src="/lovable-uploads/1dd00bdf-86f8-486e-af63-8adb5ac53804.png" alt="Milana Thornton" className="w-full h-full object-cover" />
               </div>
@@ -83,7 +83,7 @@ const LinkedInRecommendations = () => {
                 <p className="text-muted-foreground text-sm">AI Visibility Strategy Expert</p>
               </div>
             </div>
-            <h4 className="text-lg font-semibold mb-3 text-card-foreground">
+            <h4 className="text-lg font-semibold mb-2 text-card-foreground">
               Every interaction leaves you thinking differently and feeling inspired.
             </h4>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -92,17 +92,17 @@ const LinkedInRecommendations = () => {
           </div>
 
           {/* Recommendation 5 - Chase Aldridge */}
-          <div className="bg-accent text-accent-foreground p-6 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.4s'}}>
-            <div className="flex items-center mb-4">
+          <div className="bg-accent text-accent-foreground p-4 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.4s'}}>
+            <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img src="/lovable-uploads/b87160d7-d130-4e3b-b93d-2fadc9501abe.png" alt="Chase Aldridge" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/7d050b90-5c8d-446e-b2ca-e341e179d351.png" alt="Chase Aldridge" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-accent-foreground">Chase Aldridge</p>
                 <p className="text-accent-foreground/70 text-sm">AI Automation Consultant</p>
               </div>
             </div>
-            <h4 className="text-lg font-semibold mb-3 text-accent-foreground">
+            <h4 className="text-lg font-semibold mb-2 text-accent-foreground">
               Has this uncanny ability to help you see your goals clearly.
             </h4>
             <p className="text-accent-foreground/80 text-sm leading-relaxed">
@@ -111,8 +111,8 @@ const LinkedInRecommendations = () => {
           </div>
 
           {/* Recommendation 6 - James Killick */}
-          <div className="bg-muted text-muted-foreground p-6 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.5s'}}>
-            <div className="flex items-center mb-4">
+          <div className="bg-muted text-muted-foreground p-4 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.5s'}}>
+            <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                 <img src="/lovable-uploads/ac70ee7b-619d-4204-b426-91b6436e3a89.png" alt="James Killick" className="w-full h-full object-cover" />
               </div>
@@ -121,7 +121,7 @@ const LinkedInRecommendations = () => {
                 <p className="text-muted-foreground/70 text-sm">AI Systems & Business Owner</p>
               </div>
             </div>
-            <h4 className="text-lg font-semibold mb-3 text-muted-foreground">
+            <h4 className="text-lg font-semibold mb-2 text-muted-foreground">
               Changed my perspective for the better and helped me become far more productive.
             </h4>
             <p className="text-muted-foreground/80 text-sm leading-relaxed">
