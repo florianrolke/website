@@ -35,15 +35,16 @@ const SenjaWidget = () => {
   }, []);
 
   return (
-    <div className="w-full bg-white py-8">
+    <div className="w-full bg-white py-8" style={{ backgroundColor: 'white' }}>
       <iframe 
         id="wall-of-love-vRlkURH" 
-        src="https://senja.io/p/florian-rolke/vRlkURH?hideNavigation=true&embed=true" 
+        src="https://senja.io/p/florian-rolke/vRlkURH?hideNavigation=true&embed=true&backgroundColor=white" 
         title="Wall of Love" 
         frameBorder="0" 
         scrolling="no" 
         width="100%"
-        className="w-full"
+        className="w-full bg-white"
+        style={{ backgroundColor: 'white' }}
       />
     </div>
   );
