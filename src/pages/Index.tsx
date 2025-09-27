@@ -68,11 +68,12 @@ const Index = () => {
       </div>
       
       <WhyOneBusinessSection />
+      
+      <SenjaWidget2 />
+      
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton className="my-4" />
       </div>
-      
-      <SenjaWidget2 />
       
       {/* Full-screen testimonial images at bottom */}
       <div className="w-full">
