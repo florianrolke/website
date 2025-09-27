@@ -10,6 +10,7 @@ import WhyOneBusinessSection from '../components/WhyOneBusinessSection';
 import AnimatedButton from '../components/AnimatedButton';
 import LinkedInRecommendations from '../components/LinkedInRecommendations';
 import SenjaWidget from '../components/SenjaWidget';
+import SenjaWidget2 from '../components/SenjaWidget2';
 import { useIsMobile } from '../hooks/use-mobile';
 
 const CALENDAR_URL = "https://cal.com/florianrolke/nail-your-positioning-clarity-call";
@@ -70,6 +71,8 @@ const Index = () => {
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton className="my-4" />
       </div>
+      
+      <SenjaWidget2 />
       
       {/* Full-screen testimonial images at bottom */}
       <div className="w-full">
