@@ -43,11 +43,6 @@ const Index = () => {
       
       <LinkedInRecommendations />
       
-      <TestimonialSection variant="senja" />
-      <div className="bg-white pt-2 pb-4">
-        <AnimatedButton className="my-4" />
-      </div>
-      
       <div className="bg-white py-4">
         <ProblemSection />
       </div>
