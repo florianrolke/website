@@ -11,6 +11,7 @@ import AnimatedButton from '../components/AnimatedButton';
 import LinkedInRecommendations from '../components/LinkedInRecommendations';
 import SenjaWidget from '../components/SenjaWidget';
 import SenjaWidget2 from '../components/SenjaWidget2';
+import ClarityConsolidation from '../components/ClarityConsolidation';
 import { useIsMobile } from '../hooks/use-mobile';
 
 const CALENDAR_URL = "https://cal.com/florianrolke/nail-your-positioning-clarity-call";
@@ -42,7 +43,9 @@ const Index = () => {
       <SenjaWidget />
       
       <LinkedInRecommendations />
-      
+
+      <ClarityConsolidation />
+
       <div className="bg-white py-4">
         <ProblemSection />
       </div>
