@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 const LinkedInRecommendations = () => {
   return (
@@ -19,7 +19,7 @@ const LinkedInRecommendations = () => {
             <div className="absolute top-2 left-2 w-3 h-3 bg-blue-400 rounded-full opacity-60"></div>
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4 ring-2 ring-blue-400/30">
-                <img src="/lovable-uploads/f3e663f6-7526-40da-89fa-a051e1eb2635.png" alt="Dhruv Jain" className="w-full h-full object-cover" />
+                <img src="/site-assets/f3e663f6-7526-40da-89fa-a051e1eb2635.png" alt="Dhruv Jain" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-primary-foreground">Dhruv Jain</p>
@@ -38,7 +38,7 @@ const LinkedInRecommendations = () => {
           <div className="bg-secondary text-secondary-foreground p-4 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.1s'}}>
             <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img src="/lovable-uploads/b87160d7-d130-4e3b-b93d-2fadc9501abe.png" alt="Jean-Philippe Duchesneau" className="w-full h-full object-cover" />
+                <img src="/site-assets/b87160d7-d130-4e3b-b93d-2fadc9501abe.png" alt="Jean-Philippe Duchesneau" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-secondary-foreground">Jean-Philippe Duchesneau</p>
@@ -57,7 +57,7 @@ const LinkedInRecommendations = () => {
           <div className="bg-card text-card-foreground p-4 rounded-lg shadow-lg border animate-fade-in" style={{animationDelay: '0.2s'}}>
             <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img src="/lovable-uploads/adbff735-bdf7-4211-9071-f1d5c0bc90b6.png" alt="Nate Roten" className="w-full h-full object-cover" />
+                <img src="/site-assets/adbff735-bdf7-4211-9071-f1d5c0bc90b6.png" alt="Nate Roten" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-card-foreground">Nate Roten</p>
@@ -76,7 +76,7 @@ const LinkedInRecommendations = () => {
           <div className="bg-card text-card-foreground p-4 rounded-lg shadow-lg border animate-fade-in" style={{animationDelay: '0.3s'}}>
             <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img src="/lovable-uploads/1dd00bdf-86f8-486e-af63-8adb5ac53804.png" alt="Milana Thornton" className="w-full h-full object-cover" />
+                <img src="/site-assets/1dd00bdf-86f8-486e-af63-8adb5ac53804.png" alt="Milana Thornton" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-card-foreground">Milana Thornton</p>
@@ -95,7 +95,7 @@ const LinkedInRecommendations = () => {
           <div className="bg-accent text-accent-foreground p-4 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.4s'}}>
             <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img src="/lovable-uploads/7d050b90-5c8d-446e-b2ca-e341e179d351.png" alt="Chase Aldridge" className="w-full h-full object-cover" />
+                <img src="/site-assets/7d050b90-5c8d-446e-b2ca-e341e179d351.png" alt="Chase Aldridge" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-accent-foreground">Chase Aldridge</p>
@@ -114,7 +114,7 @@ const LinkedInRecommendations = () => {
           <div className="bg-muted text-muted-foreground p-4 rounded-lg shadow-lg animate-fade-in" style={{animationDelay: '0.5s'}}>
             <div className="flex items-center mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img src="/lovable-uploads/ac70ee7b-619d-4204-b426-91b6436e3a89.png" alt="James Killick" className="w-full h-full object-cover" />
+                <img src="/site-assets/ac70ee7b-619d-4204-b426-91b6436e3a89.png" alt="James Killick" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="font-semibold text-muted-foreground">James Killick</p>

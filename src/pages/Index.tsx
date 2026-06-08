@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Logo from '../components/Logo';
 import LinkedInButton from '../components/LinkedInButton';
 import AnimatedText from '../components/AnimatedText';
@@ -76,7 +76,7 @@ const Index = () => {
       {/* Full-screen testimonial images at bottom */}
       <div className="w-full">
         <img 
-          src="/lovable-uploads/ea446d69-797c-4681-8a14-e292323faf7e.png" 
+          src="/site-assets/ea446d69-797c-4681-8a14-e292323faf7e.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -84,7 +84,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/9e6c0c9f-40bf-4761-ad4d-66a1a7a95019.png" 
+          src="/site-assets/9e6c0c9f-40bf-4761-ad4d-66a1a7a95019.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -92,7 +92,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/76cfa52d-bff6-4c50-b71a-02319fc98f98.png" 
+          src="/site-assets/76cfa52d-bff6-4c50-b71a-02319fc98f98.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -100,7 +100,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/8fcfd2de-c6a8-445a-89b5-040b55c0ab50.png" 
+          src="/site-assets/8fcfd2de-c6a8-445a-89b5-040b55c0ab50.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -108,7 +108,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/58611faa-76fb-4ea9-9a30-0235b1f50f7b.png" 
+          src="/site-assets/58611faa-76fb-4ea9-9a30-0235b1f50f7b.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -116,7 +116,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/2fbfe17e-705c-44cc-a83f-1118fb52cadd.png" 
+          src="/site-assets/2fbfe17e-705c-44cc-a83f-1118fb52cadd.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -124,7 +124,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/c78f268e-7680-441a-8666-03c790c25452.png" 
+          src="/site-assets/c78f268e-7680-441a-8666-03c790c25452.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -132,7 +132,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/2610dcf5-6867-4f06-9e08-e08e9ebfd069.png" 
+          src="/site-assets/2610dcf5-6867-4f06-9e08-e08e9ebfd069.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -140,7 +140,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/c960f978-2e14-4879-9efd-cf9d73ba4230.png" 
+          src="/site-assets/c960f978-2e14-4879-9efd-cf9d73ba4230.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -148,7 +148,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/21b63676-5e52-4e58-b427-ccec963bd8a8.png" 
+          src="/site-assets/21b63676-5e52-4e58-b427-ccec963bd8a8.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -156,7 +156,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/624a7d2d-64b3-4fa8-a25e-93c12239fcb5.png" 
+          src="/site-assets/624a7d2d-64b3-4fa8-a25e-93c12239fcb5.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -164,7 +164,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/1c924b01-de88-4728-b931-2d6c493b9d8e.png" 
+          src="/site-assets/1c924b01-de88-4728-b931-2d6c493b9d8e.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />
@@ -172,7 +172,7 @@ const Index = () => {
       
       <div className="w-full">
         <img 
-          src="/lovable-uploads/cbb63540-1a40-4b98-bebf-918996c0ee86.png" 
+          src="/site-assets/cbb63540-1a40-4b98-bebf-918996c0ee86.png" 
           alt="Customer testimonials and feedback collection" 
           className="w-full h-auto object-cover"
         />

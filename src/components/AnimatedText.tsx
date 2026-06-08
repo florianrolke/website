@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
 import { Linkedin } from 'lucide-react';
@@ -51,7 +51,7 @@ const AnimatedText = () => {
         </div>
         {(!isMobile || window.innerWidth >= 768) && (
           <img 
-            src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
+            src="/site-assets/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
             alt="Profile"
             className="w-72 md:w-[21rem] lg:w-[28rem] h-auto object-contain -mt-10 md:translate-x-6 z-0"
           />
@@ -59,7 +59,7 @@ const AnimatedText = () => {
         {isMobile && (
           <div className="flex flex-col items-center w-full">
             <img 
-              src="/lovable-uploads/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
+              src="/site-assets/26928ad4-83d9-40e0-903a-a6bc8765c7c6.png"
               alt="Profile"
               className="w-56 h-auto object-contain -mt-6 z-0"
             />
