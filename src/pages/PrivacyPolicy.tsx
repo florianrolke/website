@@ -108,6 +108,16 @@ const PrivacyPolicy = () => {
           </section>
 
           <section>
+            <h2 className="mb-3 text-2xl font-semibold text-slate-950">Payments</h2>
+            <p>
+              We do not directly collect or store payment card details on this
+              website. If you make a payment, it may be processed through a
+              third-party provider such as PayPal, which handles payment
+              information according to its own terms and privacy policy.
+            </p>
+          </section>
+
+          <section>
             <h2 className="mb-3 text-2xl font-semibold text-slate-950">How We Share Information</h2>
             <p>
               We do not sell your personal information. We may share information
@@ -163,6 +173,8 @@ const PrivacyPolicy = () => {
               Healing Arts E.I.R.L.
               <br />
               RUC: 20605772014
+              <br />
+              Jr. Koribeni C-11
               <br />
               Email: florian@florianrolke.com
             </p>
