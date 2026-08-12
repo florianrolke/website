@@ -10,7 +10,7 @@ const AnimatedText = () => {
     <div className="relative max-w-[1400px] mx-auto">
       {isMobile && (
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/florianrolke"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-all duration-300 mb-4 mx-auto w-fit"

@@ -46,7 +46,7 @@ const ProblemSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card className="overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80" 
+                src="/site-assets/problem-stat-visitors.jpg"
                 alt="Person working with computer" 
                 className="w-full h-48 object-cover"
               />
@@ -66,7 +66,7 @@ const ProblemSection = () => {
 
             <Card className="overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" 
+                src="/site-assets/problem-stat-customers.jpg"
                 alt="Person looking stressed at computer" 
                 className="w-full h-48 object-cover"
               />

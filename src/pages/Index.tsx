@@ -3,14 +3,11 @@ import Logo from '../components/Logo';
 import LinkedInButton from '../components/LinkedInButton';
 import AnimatedText from '../components/AnimatedText';
 import WaveAnimation from '../components/WaveAnimation';
-import TestimonialSection from '../components/TestimonialSection';
 import ProblemSection from '../components/ProblemSection';
 import HellDreamSection from '../components/HellDreamSection';
 import WhyOneBusinessSection from '../components/WhyOneBusinessSection';
 import AnimatedButton from '../components/AnimatedButton';
 import LinkedInRecommendations from '../components/LinkedInRecommendations';
-import SenjaWidget from '../components/SenjaWidget';
-import SenjaWidget2 from '../components/SenjaWidget2';
 import ClarityConsolidation from '../components/ClarityConsolidation';
 import { useIsMobile } from '../hooks/use-mobile';
 
@@ -39,9 +36,7 @@ const Index = () => {
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton className="mb-4" />
       </div>
-      
-      <SenjaWidget />
-      
+
       <LinkedInRecommendations />
 
       <ClarityConsolidation />
@@ -52,23 +47,18 @@ const Index = () => {
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton className="my-4" />
       </div>
-      
-      <div className="bg-white py-4">
-        <TestimonialSection variant="wall-of-love" />
-      </div>
+
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton className="my-4" />
       </div>
-      
+
       <HellDreamSection />
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton className="my-4" />
       </div>
       
       <WhyOneBusinessSection />
-      
-      <SenjaWidget2 />
-      
+
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton className="my-4" />
       </div>

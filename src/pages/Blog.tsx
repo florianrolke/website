@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowRight, ExternalLink } from 'lucide-react';
 
 const GHOST_URL = 'https://blog.florianrolke.com';
+// Public read-only Ghost Content API key — designed to be exposed in the client bundle.
 const GHOST_CONTENT_API_KEY = 'a38b2a56ba0275096bfd341c73';
 
 interface GhostPost {
