@@ -48,10 +48,6 @@ const Index = () => {
         <AnimatedButton className="my-4" />
       </div>
 
-      <div className="bg-white pt-2 pb-4">
-        <AnimatedButton className="my-4" />
-      </div>
-
       <HellDreamSection />
       <div className="bg-white pt-2 pb-4">
         <AnimatedButton className="my-4" />
