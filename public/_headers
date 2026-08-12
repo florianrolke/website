@@ -1,0 +1,17 @@
+# Cloudflare Pages headers.
+# Media is content-addressed by filename (a clip never changes under the same name),
+# so it can be cached hard at the edge. Edge caching is also what lets Cloudflare
+# answer HTTP Range requests, which is what makes seeking in a <video> work.
+/media/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Build assets already carry a content hash in their filename.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/dotlottie-player.wasm
+  Cache-Control: public, max-age=31536000, immutable
+
+# Internal review page for clips whose consent is still pending: never index it.
+/media-test
+  X-Robots-Tag: noindex, nofollow
